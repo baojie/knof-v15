@@ -29,6 +29,24 @@ artifacts. The cleaner (`clean_knof.py`) performs these transformations:
 | `__content__` and section bodies (HTML fragments) | converted to Markdown; links and images made absolute `https://`; `script`/`style`/empty anchors removed |
 | Non-Latin text in the body (Japanese/Chinese names inside enwiki articles, etc.) | **kept** — this is original Wikipedia content, not noise |
 
+## Chinese duplicates: 2015-05 vs 2015-06-02
+
+The Chinese crawl exists in two vintages: the first pass (`zh-json/2015-05`, 4
+machines) and the re-crawl (`zh-json/2015-06-02`, 21 machines). The re-crawl is
+the better copy. The release merges them with the re-crawl taking priority:
+
+```bash
+# 1) full re-crawl first
+python3 clean_knof.py /path/to/zh-json/2015-06-02 zh.jsonl --workers 16
+# 2) first pass only where the re-crawl has no such article id
+python3 clean_knof.py /path/to/zh-json/2015-05 zh-supplement.jsonl \
+    --workers 16 --skip-ids zh.jsonl --skip-lang zh
+```
+
+Note that the first pass uses an older schema (no `__context__`, `__uuid__`,
+`__relation__`), so it carries no links; its language is taken from the source
+directory, not from the file content.
+
 ## Output schema
 
 One JSON object per line (JSONL), UTF-8:
