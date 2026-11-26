@@ -1,0 +1,6 @@
+# Local sample data and generated output are not committed.
+testdata/
+*.jsonl
+*.jsonl.parts/
+__pycache__/
+*.pyc
