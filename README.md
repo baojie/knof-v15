@@ -219,9 +219,7 @@ with open("knof-v15-en-2015-06.jsonl", encoding="utf-8") as f:
 ## Where it comes from
 
 The crawl was made in 2015 by **knof**, a project to turn Wikipedia into a
-knowledge graph. To respect Wikipedia's one-request-per-second crawl limit,
-115 small cloud machines each fetched a slice of the titles, for a total cost
-of about US$55. The project never shipped, but the crawl survived, and this
+knowledge graph. The project never shipped, but the crawl survived, and this
 is its first public release. The `v15` in the name stands for 2015.
 
 The raw crawl (~550 GB of HTML and parsed JSON) is not distributed.
