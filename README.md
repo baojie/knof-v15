@@ -1,16 +1,17 @@
 # knof-v15
 
-**English and Chinese Wikipedia as of 2 June 2015, cut into about 28 million
-interlinked knowledge fragments.** Every article (5.71 million) is split along
+**English and Chinese Wikipedia as of 2 June 2015, cut into about 31 million
+interlinked knowledge fragments.** Every article (5.95 million) is split along
 its own section tree. Each fragment is a piece of Markdown with a title, a place
 in its article and a source URL, and links to other articles.
 
-| | Articles | Section-level fragments |
-|---|---|---|
-| English | 4.89 M | ~25 M |
-| Chinese | 0.82 M | ~2.7 M |
+| | Articles | Fragments (lead + sections) | Size, uncompressed |
+|---|---|---|---|
+| English | 4,882,789 | 26.0 M | 128 GB |
+| Chinese | 1,065,845 | 4.77 M | 26 GB |
 
-> **Status:** not yet released. Download links will be posted here.
+> **Download:** [GitHub Releases, v1.0](https://github.com/baojie/knof-v15/releases/tag/v1.0).
+> To look first, get [`knof-v15-sample.zip`](https://github.com/baojie/knof-v15/releases/download/v1.0/knof-v15-sample.zip) (11 MB).
 
 ## Why this dataset
 
@@ -66,14 +67,29 @@ Two more things make this possible:
 
 ## Files
 
-| File | Content |
-|---|---|
-| `en.jsonl` | English Wikipedia |
-| `zh.jsonl` | Chinese Wikipedia (June 2015 crawl) |
-| `zh-supplement.jsonl` | Chinese articles missing from `zh.jsonl`, taken from an earlier 2015 crawl |
+| File | Content | Articles | Parts | Download |
+|---|---|---|---|---|
+| `knof-v15-en-2015-06` | English Wikipedia, crawled 2–22 June 2015 | 4,882,789 | 33 | 17.8 GB |
+| `knof-v15-zh-2015-06` | Chinese Wikipedia, same crawl | 822,794 | 6 | 2.3 GB |
+| `knof-v15-zh-2015-03` | Chinese articles missing from the June crawl, from an earlier crawl (revisions up to mid-March 2015) | 243,051 | 2 | 0.7 GB |
+| `knof-v15-sample.zip` | 2,300 random articles from the three files | 2,300 | 1 | 11 MB |
 
-`zh.jsonl` and `zh-supplement.jsonl` never share an `id`; use both for the
-fullest Chinese coverage. Files are published zstd-compressed, in parts.
+The two Chinese files never share an `id`; use both for the
+fullest Chinese coverage.
+
+**Download in parts.** Each file is published as parts of at most 4 GB of JSONL
+(300–600 MB compressed; 20.8 GB for everything), split between records and
+compressed with zstd, for example `knof-v15-en-2015-06-00001-of-00033.jsonl.zst`. Every part is complete
+on its own: decompress one and start using it while the rest download.
+`SHA256SUMS` and `manifest.json` list each part's checksum and article count.
+
+```sh
+zstd -dc knof-v15-zh-2015-06-00001-of-00006.jsonl.zst | head -1
+```
+
+**Sample.** `knof-v15-sample.zip` (11 MB) holds 1,000 random English
+articles, 1,000 from the June Chinese crawl and 300 from the March one, plus two
+pretty-printed records, so you can see the data before downloading the rest.
 
 ## Record format
 
@@ -128,12 +144,12 @@ that only groups subsections (*Codemasters series* above) is kept with empty
 |---|---|
 | `id` | `<lang>:<title>`, unique within the dataset |
 | `title` | canonical article title |
-| `display_title` | the title as the page showed it, when different (lowercase first letter, Chinese script variant…); otherwise `null` |
+| `display_title` | the title as the page showed it, when different (lowercase first letter, Chinese script variant, leading or trailing underscores as in *_NSAKEY*…); otherwise `null` |
 | `lang` | `en` or `zh` |
 | `context` | the site the page was downloaded from: `wikien` (en.wikipedia.org) or `wikizh` (zh.wikipedia.org) |
 | `url` | the article's Wikipedia URL (today's page, not the 2015 revision) |
-| `uuid` | stable id of the article; other articles' links point to it through `target_uuid`. `null` in `zh-supplement.jsonl` |
-| `last_modified` | time of the revision that was crawled, UTC |
+| `uuid` | stable id of the article; other articles' links point to it through `target_uuid`. `null` in the 2015-03 file |
+| `last_modified` | time of the revision that was crawled, UTC (`null` only for two pages that show none) |
 | `description` | the lead as plain text |
 | `intro` | the lead as Markdown |
 | `links`, `main_image`, `images` | the lead's links and images (see below) |
@@ -143,7 +159,8 @@ that only groups subsections (*Codemasters series* above) is kept with empty
 **Section fields**: `title`, `uuid`, `super`, `markdown`, `links`, `images`,
 `main_image` (only when present), `sections`. `super` is the list of ancestor
 titles, from the article down to the parent section, as recorded in the source
-(`null` for the article itself).
+(`null` for the article itself, and for every section in the 2015-03 file,
+whose crawl did not record it).
 
 **Links** (`links` of the article and of each section) are the links in that
 part of the page, as recorded in 2015:
@@ -156,7 +173,7 @@ part of the page, as recorded in 2015:
 | `target_uuid` | `uuid` of the target article, so links join to articles without title matching |
 
 All links also stay inline in the Markdown, at their place in the text.
-`zh-supplement.jsonl` has inline links only; its `links` lists are empty.
+The 2015-03 file has inline links only; its `links` lists are empty.
 
 **Images**: `main_image` is the page's lead image URL. Each entry of `images`
 has `src` (the image as displayed), `file` (its File: page, when known), `alt`
@@ -173,7 +190,7 @@ their structure attributes, so no row, column or cell boundary is lost.
 ```python
 import json
 
-with open("en.jsonl", encoding="utf-8") as f:
+with open("knof-v15-en-2015-06.jsonl", encoding="utf-8") as f:
     for line in f:
         a = json.loads(line)
         stack = [([a["title"]], sec) for sec in reversed(a["sections"])]
@@ -193,6 +210,9 @@ with open("en.jsonl", encoding="utf-8") as f:
   end up at the end of the last section (see *References* in `samples/en.json`). Drop
   them if you want prose only.
 - Image files are not included, only their URLs.
+- The crawl fetched about a thousand pages twice, under a redirect or a variant
+  name. Each `id` appears once; where the two fetches differ, the later
+  revision is kept.
 - Chinese articles keep whatever script (simplified or traditional) they were
   written in; no conversion has been applied.
 
