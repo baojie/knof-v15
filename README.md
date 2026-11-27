@@ -86,44 +86,89 @@ record is one line. Shortened:
 {
   "id": "en:Operation Flashpoint (series)",
   "title": "Operation Flashpoint (series)",
+  "display_title": null,
   "lang": "en",
   "url": "https://en.wikipedia.org/wiki/Operation_Flashpoint_(series)",
+  "uuid": "wikien-FkUXbhApfNJxN0QDZ4gD9w",
+  "super": null,
+  "context": "wikien",
+  "last_modified": "2015-06-06T21:14:00Z",
   "description": "Operation Flashpoint is a series of military simulation games. …",
-  "intro": "…",
+  "intro": "<table>…infobox…</table>\n\n**Operation Flashpoint** is a series of …",
+  "links": [{"anchor": "Military", "url": "https://en.wikipedia.org/wiki/Military",
+             "type": "link", "target_uuid": "wikien-fSlX39O4iPxAh_YMPGUJUw"}, "…"],
+  "main_image": null,
+  "images": [],
   "sections": [
-    {"title": "Bohemia Interactive series", "markdown": "", "sections": [
-      {"title": "Operation Flashpoint: Cold War Crisis (2001)", "markdown": "Main article: [Operation Flashpoint: Cold War Crisis](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Cold_War_Crisis \"Operation Flashpoint: Cold War Crisis\") …", "sections": [
-        {"title": "Expansion pack", "markdown": "…", "sections": []}
-      ]}
+    {"title": "Bohemia Interactive series", "uuid": "wikien-…", "markdown": "", "links": [], "images": [], "sections": [
+      {"title": "Operation Flashpoint: Cold War Crisis (2001)", "uuid": "wikien-oWsVgZK0yGvE5PiwaFix5w",
+       "super": ["Operation Flashpoint (series)", "Bohemia Interactive series"],
+       "markdown": "Main article: [Operation Flashpoint: Cold War Crisis](https://en.wikipedia.org/wiki/…) …",
+       "links": [{"anchor": "Operation Flashpoint: Cold War Crisis",
+                  "url": "https://en.wikipedia.org/wiki/Operation_Flashpoint:_Cold_War_Crisis",
+                  "type": "main", "target_uuid": "wikien-O0LOV4-z3RQSrsoBdZSVUw"}, "…"],
+       "images": [],
+       "sections": [{"title": "Expansion pack", "…": "…"}]}
     ]},
-    {"title": "Codemasters series", "markdown": "", "sections": [
-      {"title": "Operation Flashpoint: Dragon Rising (2009)", "markdown": "…", "sections": []},
-      {"title": "Operation Flashpoint: Red River (2011)", "markdown": "…", "sections": []}
-    ]},
-    {"title": "References", "markdown": "…", "sections": []}
+    {"title": "Codemasters series", "uuid": "wikien-…", "markdown": "", "links": [], "images": [], "sections": ["…"]},
+    {"title": "References", "…": "…"}
   ],
-  "categories": ["Video game franchises", "Military combat simulators", "…"],
-  "links": [{"anchor": "…", "url": "https://en.wikipedia.org/wiki/…"}],
-  "images": ["https://upload.wikimedia.org/…"]
+  "categories": ["Video game franchises", "Military combat simulators", "…"]
 }
 ```
 
-`sections` is the article's own section tree, nested as on the page. A heading
-that only groups subsections (*Codemasters series* above) is kept, with empty
+The article and every section are nodes of the same kind: text, links,
+images, child sections. The tree is the article's own section tree. A heading
+that only groups subsections (*Codemasters series* above) is kept with empty
 `markdown`, so the tree is never broken.
+
+**Article fields**
 
 | Field | Meaning |
 |---|---|
 | `id` | `<lang>:<title>`, unique within the dataset |
-| `title` | article title |
+| `title` | canonical article title |
+| `display_title` | the title as the page showed it, when different (lowercase first letter, Chinese script variant…); otherwise `null` |
 | `lang` | `en` or `zh` |
+| `context` | the site the page was downloaded from: `wikien` (en.wikipedia.org) or `wikizh` (zh.wikipedia.org) |
 | `url` | the article's Wikipedia URL (today's page, not the 2015 revision) |
-| `description` | short plain-text abstract; may be empty |
-| `intro` | lead section, Markdown |
-| `sections` | the rest of the article as a tree: each node has `title`, `markdown` (may be empty for a heading that only groups subsections) and its own `sections`, in reading order |
+| `uuid` | stable id of the article; other articles' links point to it through `target_uuid`. `null` in `zh-supplement.jsonl` |
+| `last_modified` | time of the revision that was crawled, UTC |
+| `description` | the lead as plain text |
+| `intro` | the lead as Markdown |
+| `links`, `main_image`, `images` | the lead's links and images (see below) |
+| `sections` | the section tree, in reading order |
 | `categories` | category names, without the `Category:` prefix; includes Wikipedia's maintenance categories (e.g. *All articles with unsourced statements*) |
-| `links` | links in the lead section, with anchor text, as the 2015 parser recorded them; **always empty in `zh-supplement.jsonl`**. Links in every part of the article stay inline in its Markdown, so you can recover them per section |
-| `images` | image URLs from the page; the same image may appear at more than one resolution. Images are not embedded in the Markdown, only their alt text |
+
+**Section fields**: `title`, `uuid`, `super`, `markdown`, `links`, `images`,
+`main_image` (only when present), `sections`. `super` is the list of ancestor
+titles, from the article down to the parent section, as recorded in the source
+(`null` for the article itself).
+
+**Links** (`links` of the article and of each section) are the links in that
+part of the page, as recorded in 2015:
+
+| Field | Meaning |
+|---|---|
+| `anchor` | the link text |
+| `url` | target URL |
+| `type` | `link` for an ordinary link, `main` for a "Main article:" pointer, `see_also` for a "See also:" pointer; any other label is kept as written |
+| `target_uuid` | `uuid` of the target article, so links join to articles without title matching |
+
+All links also stay inline in the Markdown, at their place in the text.
+`zh-supplement.jsonl` has inline links only; its `links` lists are empty.
+
+**Images**: `main_image` is the page's lead image URL. Each entry of `images`
+has `src` (the image as displayed), `file` (its File: page, when known), `alt`
+and `caption`. Images inside the text stay inline as `![alt](src)`.
+
+**Markdown.** Paragraphs, line breaks, lists, emphasis, links and images are
+plain Markdown. A few things Markdown cannot express are kept as inline HTML so
+nothing is lost: superscript and subscript (`m<sup>2</sup>`), line breaks
+inside table cells (`<br>`), and emphasis glued to a word. Tables with one
+header row and no merged cells are Markdown tables; all others (infoboxes,
+tables with merged cells or lists inside cells) are kept as HTML with only
+their structure attributes, so no row, column or cell boundary is lost.
 
 ```python
 import json
@@ -143,8 +188,7 @@ with open("en.jsonl", encoding="utf-8") as f:
 
 - **It is 2015.** Many articles have since been rewritten, merged or deleted.
   Don't use it to answer questions about the present.
-- Pages came from Wikipedia's **mobile** site, so infoboxes usually appear as
-  lists inside `intro`, not as key–value fields.
+- Infoboxes are kept as HTML tables at the start of `intro`.
 - **Navigation boxes are kept.** The link grids at the foot of many articles
   end up at the end of the last section (see *References* in `samples/en.json`). Drop
   them if you want prose only.
@@ -160,9 +204,7 @@ knowledge graph. To respect Wikipedia's one-request-per-second crawl limit,
 of about US$55. The project never shipped, but the crawl survived, and this
 is its first public release. The `v15` in the name stands for 2015.
 
-The raw crawl (~550 GB of HTML and parsed JSON) is not distributed. If you have
-it, `run_release.sh` regenerates the three files (`pip install -r
-requirements.txt` first; set `SRC`, `OUT` and `CLEANER` as needed).
+The raw crawl (~550 GB of HTML and parsed JSON) is not distributed.
 
 ## License and attribution
 
@@ -171,5 +213,3 @@ The text comes from Wikipedia, which in 2015 was licensed under
 allows adaptations to use later versions, and this dataset is released under
 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 Attribution: *Wikipedia contributors, crawled June 2015 by the knof project.*
-
-The code in this repository is MIT-licensed (see `LICENSE`).

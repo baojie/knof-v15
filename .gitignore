@@ -4,3 +4,11 @@ testdata/
 *.jsonl.parts/
 __pycache__/
 *.pyc
+
+# Cleaning scripts stay local, not part of the release repo.
+clean_knof.py
+run_release.sh
+requirements.txt
+
+# Local planning notes.
+private/

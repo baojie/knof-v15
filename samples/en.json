@@ -1,22 +1,90 @@
 {
   "id": "en:Operation Flashpoint (series)",
   "title": "Operation Flashpoint (series)",
+  "display_title": null,
   "lang": "en",
   "url": "https://en.wikipedia.org/wiki/Operation_Flashpoint_(series)",
+  "uuid": "wikien-FkUXbhApfNJxN0QDZ4gD9w",
+  "super": null,
+  "context": "wikien",
+  "last_modified": "2015-06-06T21:14:00Z",
   "description": "Operation Flashpoint is a series of military simulation games. The first game, Operation Flashpoint, was developed by Bohemia Interactive Studio. The second games, comprising Operation Flashpoint: Dragon Rising and Operation Flashpoint: Red River, were developed by Codemasters.",
-  "intro": "Operation Flashpoint Series\n---\n[Genres](https://en.wikipedia.org/wiki/Video_game_genres \"Video game genres\") | [Military simulation](https://en.wikipedia.org/wiki/Military_simulation \"Military simulation\"), [tactical shooter](https://en.wikipedia.org/wiki/Tactical_shooter \"Tactical shooter\")\n[Developers](https://en.wikipedia.org/wiki/Video_game_developer \"Video game developer\") | [Bohemia Interactive](https://en.wikipedia.org/wiki/Bohemia_Interactive \"Bohemia Interactive\")\n[Codemasters](https://en.wikipedia.org/wiki/Codemasters \"Codemasters\")\n[Publishers](https://en.wikipedia.org/wiki/Video_game_publisher \"Video game publisher\") | Codemasters\nPlatforms | [Microsoft Windows](https://en.wikipedia.org/wiki/Microsoft_Windows \"Microsoft Windows\")\n[PlayStation 3](https://en.wikipedia.org/wiki/PlayStation_3 \"PlayStation 3\")\n[Xbox](https://en.wikipedia.org/wiki/Xbox_\\(console\\) \"Xbox \\(console\\)\")\n[Xbox 360](https://en.wikipedia.org/wiki/Xbox_360 \"Xbox 360\")\nYear of inception | 2001\n\n_**Operation Flashpoint**_ is a series of [military](https://en.wikipedia.org/wiki/Military \"Military\") simulation games. The first game, Operation Flashpoint, was developed by [Bohemia Interactive Studio](https://en.wikipedia.org/wiki/Bohemia_Interactive_Studio \"Bohemia Interactive Studio\"). The second games, comprising Operation Flashpoint: Dragon Rising and Operation Flashpoint: Red River, were developed by [Codemasters](https://en.wikipedia.org/wiki/Codemasters \"Codemasters\").",
+  "intro": "<table>\n<tr>\n<th colspan=\"2\">Operation Flashpoint Series</th>\n</tr>\n<tr>\n<th scope=\"row\"><a href=\"https://en.wikipedia.org/wiki/Video_game_genres\" title=\"Video game genres\">Genres</a></th>\n<td><a href=\"https://en.wikipedia.org/wiki/Military_simulation\" title=\"Military simulation\">Military simulation</a>, <a href=\"https://en.wikipedia.org/wiki/Tactical_shooter\" title=\"Tactical shooter\">tactical shooter</a></td>\n</tr>\n<tr>\n<th scope=\"row\"><a href=\"https://en.wikipedia.org/wiki/Video_game_developer\" title=\"Video game developer\">Developers</a></th>\n<td><a href=\"https://en.wikipedia.org/wiki/Bohemia_Interactive\" title=\"Bohemia Interactive\">Bohemia Interactive</a><br/>\n<a href=\"https://en.wikipedia.org/wiki/Codemasters\" title=\"Codemasters\">Codemasters</a></td>\n</tr>\n<tr>\n<th scope=\"row\"><a href=\"https://en.wikipedia.org/wiki/Video_game_publisher\" title=\"Video game publisher\">Publishers</a></th>\n<td>Codemasters</td>\n</tr>\n<tr>\n<th scope=\"row\">Platforms</th>\n<td><a href=\"https://en.wikipedia.org/wiki/Microsoft_Windows\" title=\"Microsoft Windows\">Microsoft Windows</a><br/>\n<a href=\"https://en.wikipedia.org/wiki/PlayStation_3\" title=\"PlayStation 3\">PlayStation 3</a><br/>\n<a href=\"https://en.wikipedia.org/wiki/Xbox_(console)\" title=\"Xbox (console)\">Xbox</a><br/>\n<a href=\"https://en.wikipedia.org/wiki/Xbox_360\" title=\"Xbox 360\">Xbox 360</a></td>\n</tr>\n<tr>\n<th scope=\"row\">Year of inception</th>\n<td>2001</td>\n</tr>\n</table>\n\n_**Operation Flashpoint**_ is a series of [military](https://en.wikipedia.org/wiki/Military \"Military\") simulation games. The first game, Operation Flashpoint, was developed by [Bohemia Interactive Studio](https://en.wikipedia.org/wiki/Bohemia_Interactive_Studio \"Bohemia Interactive Studio\"). The second games, comprising Operation Flashpoint: Dragon Rising and Operation Flashpoint: Red River, were developed by [Codemasters](https://en.wikipedia.org/wiki/Codemasters \"Codemasters\").",
+  "links": [
+    {
+      "anchor": "Military",
+      "url": "https://en.wikipedia.org/wiki/Military",
+      "type": "link",
+      "target_uuid": "wikien-fSlX39O4iPxAh_YMPGUJUw"
+    },
+    {
+      "anchor": "Bohemia Interactive Studio",
+      "url": "https://en.wikipedia.org/wiki/Bohemia_Interactive_Studio",
+      "type": "link",
+      "target_uuid": "wikien-iecNGn40qPFsMMSj1Pu-GQ"
+    },
+    {
+      "anchor": "Codemasters",
+      "url": "https://en.wikipedia.org/wiki/Codemasters",
+      "type": "link",
+      "target_uuid": "wikien-OUElmy5yiWqMhuv7PSsjBQ"
+    }
+  ],
+  "main_image": null,
+  "images": [],
   "sections": [
     {
       "title": "Bohemia Interactive series",
+      "uuid": "wikien-mRIopH76cDV7weH35rMezg",
+      "super": [
+        "Operation Flashpoint (series)"
+      ],
       "markdown": "",
+      "links": [],
+      "images": [],
       "sections": [
         {
           "title": "Operation Flashpoint: Cold War Crisis (2001)",
-          "markdown": "Main article: [Operation Flashpoint: Cold War Crisis](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Cold_War_Crisis \"Operation Flashpoint: Cold War Crisis\")\n\n_Operation Flashpoint: Cold War Crisis'_ s gameplay varies significantly depending on the player's role, but the game is best described as a [tactical shooter](https://en.wikipedia.org/wiki/Tactical_shooter \"Tactical shooter\") with significant vehicle elements and minor real-time tactics elements. Set in 1985, the game takes place on two fictional and one real-life islands: the island-states of Everon and Malden, and later in the game, on the barren Russian island of Kolgujev which is the staging point for the renegade Russian forces invading Everon and Malden.",
+          "uuid": "wikien-oWsVgZK0yGvE5PiwaFix5w",
+          "super": [
+            "Operation Flashpoint (series)",
+            "Bohemia Interactive series"
+          ],
+          "markdown": "Main article: [Operation Flashpoint: Cold War Crisis](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Cold_War_Crisis \"Operation Flashpoint: Cold War Crisis\")\n\n<i>Operation Flashpoint: Cold War Crisis'</i>s gameplay varies significantly depending on the player's role, but the game is best described as a [tactical shooter](https://en.wikipedia.org/wiki/Tactical_shooter \"Tactical shooter\") with significant vehicle elements and minor real-time tactics elements. Set in 1985, the game takes place on two fictional and one real-life islands: the island-states of Everon and Malden, and later in the game, on the barren Russian island of Kolgujev which is the staging point for the renegade Russian forces invading Everon and Malden.",
+          "links": [
+            {
+              "anchor": "Operation Flashpoint: Cold War Crisis",
+              "url": "https://en.wikipedia.org/wiki/Operation_Flashpoint:_Cold_War_Crisis",
+              "type": "main",
+              "target_uuid": "wikien-O0LOV4-z3RQSrsoBdZSVUw"
+            },
+            {
+              "anchor": "Tactical shooter",
+              "url": "https://en.wikipedia.org/wiki/Tactical_shooter",
+              "type": "link",
+              "target_uuid": "wikien-HRDpeOU7sT_1vSXCndZiVg"
+            }
+          ],
+          "images": [],
           "sections": [
             {
               "title": "Expansion pack",
+              "uuid": "wikien-h5VGTjhtecOKLu-ONw1h1g",
+              "super": [
+                "Operation Flashpoint (series)",
+                "Bohemia Interactive series",
+                "Operation Flashpoint: Cold War Crisis (2001)"
+              ],
               "markdown": "Main article: [Operation Flashpoint: Resistance](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Resistance \"Operation Flashpoint: Resistance\")",
+              "links": [
+                {
+                  "anchor": "Operation Flashpoint: Resistance",
+                  "url": "https://en.wikipedia.org/wiki/Operation_Flashpoint:_Resistance",
+                  "type": "main",
+                  "target_uuid": "wikien-rKjov2TUuE78gKw468kV8Q"
+                }
+              ],
+              "images": [],
               "sections": []
             }
           ]
@@ -25,23 +93,75 @@
     },
     {
       "title": "Codemasters series",
+      "uuid": "wikien-AhtiWNjPiYN67XLmms_s4w",
+      "super": [
+        "Operation Flashpoint (series)"
+      ],
       "markdown": "",
+      "links": [],
+      "images": [],
       "sections": [
         {
           "title": "Operation Flashpoint: Dragon Rising (2009)",
+          "uuid": "wikien-_8M1FMuxw1f6fXb0xRb0qQ",
+          "super": [
+            "Operation Flashpoint (series)",
+            "Codemasters series"
+          ],
           "markdown": "Main article: [Operation Flashpoint: Dragon Rising](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising \"Operation Flashpoint: Dragon Rising\")\n\nDragon Rising takes place on a fictional island named Skira, in May 2011. After the Global Economic Crisis causes mass unemployment and political destabilization in China, the PLA seize control of Skira and the vast, newly discovered reservoir of oil there, from the Russian Federation. Peace talks prove useless as both combatants lay claim to Skira due to previous ownership of it. The situation deteriorates quickly and China begins to fortify its northern provinces in anticipation of armed conflict with Russia. Russia, already countering the PLA on the Chinese mainland, calls to the United States of America to retake Skira from the Chinese. Bound by treaty arrangements made after the end of the Cold War, America agrees and the two biggest armies in the world begin to clash on the island. Dragon Rising was released for both PC and consoles, with the PC version including map editors and larger multiplayer games.",
+          "links": [
+            {
+              "anchor": "Operation Flashpoint: Dragon Rising",
+              "url": "https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising",
+              "type": "main",
+              "target_uuid": "wikien-heeXoIzfGDHy1FvqbRjdkA"
+            }
+          ],
+          "images": [],
           "sections": []
         },
         {
           "title": "Operation Flashpoint: Red River (2011)",
+          "uuid": "wikien-AC72JkHJ8X3ddRqmCbv11w",
+          "super": [
+            "Operation Flashpoint (series)",
+            "Codemasters series"
+          ],
           "markdown": "Main article: [Operation Flashpoint: Red River](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Red_River \"Operation Flashpoint: Red River\")\n\nThe game's plot concerns a fictional conflict in [Tajikistan](https://en.wikipedia.org/wiki/Tajikistan \"Tajikistan\"). The game follows a platoon of [Marines](https://en.wikipedia.org/wiki/United_States_Marine_Corps \"United States Marine Corps\"), with the player controlling Kirby, Bravo team fireteam leader.",
+          "links": [
+            {
+              "anchor": "Operation Flashpoint: Red River",
+              "url": "https://en.wikipedia.org/wiki/Operation_Flashpoint:_Red_River",
+              "type": "main",
+              "target_uuid": "wikien-oyCOJt7601-xekbwlyfvhQ"
+            },
+            {
+              "anchor": "Tajikistan",
+              "url": "https://en.wikipedia.org/wiki/Tajikistan",
+              "type": "link",
+              "target_uuid": "wikien-talyImK7t6dEnrwPQ5TJAQ"
+            },
+            {
+              "anchor": "United States Marine Corps",
+              "url": "https://en.wikipedia.org/wiki/United_States_Marine_Corps",
+              "type": "link",
+              "target_uuid": "wikien-uEOzx12w_fJJMiBowKeiyw"
+            }
+          ],
+          "images": [],
           "sections": []
         }
       ]
     },
     {
       "title": "References",
-      "markdown": "|\n\n  * [v](https://en.wikipedia.org/wiki/Template:Operation_Flashpoint \"Template:Operation Flashpoint\")\n  * [t](https://en.wikipedia.org/wiki/Template_talk:Operation_Flashpoint \"Template talk:Operation Flashpoint\")\n  * [e](https://en.wikipedia.org/w/index.php?title=Template:Operation_Flashpoint&action=edit)\n\n**_Operation Flashpoint_ series**\n---\nVideo games |\n\n  * _[Cold War Crisis](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Cold_War_Crisis \"Operation Flashpoint: Cold War Crisis\")_\n  * _[Resistance](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Resistance \"Operation Flashpoint: Resistance\")_\n  * _[Dragon Rising](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising \"Operation Flashpoint: Dragon Rising\")_\n  * _[Red River](https://en.wikipedia.org/wiki/Operation_Flashpoint:_Red_River \"Operation Flashpoint: Red River\")_\n\nRelated |\n\n  * [Bohemia Interactive](https://en.wikipedia.org/wiki/Bohemia_Interactive \"Bohemia Interactive\")\n  * [Codemasters](https://en.wikipedia.org/wiki/Codemasters \"Codemasters\")\n  * _[Gravon: Real Virtuality](https://en.wikipedia.org/wiki/Gravon:_Real_Virtuality \"Gravon: Real Virtuality\")_\n\n|\n\n  * [v](https://en.wikipedia.org/wiki/Template:Bohemia_Interactive \"Template:Bohemia Interactive\")\n  * [t](https://en.wikipedia.org/wiki/Template_talk:Bohemia_Interactive \"Template talk:Bohemia Interactive\")\n  * [e](https://en.wikipedia.org/w/index.php?title=Template:Bohemia_Interactive&action=edit)\n\n[Bohemia Interactive](https://en.wikipedia.org/wiki/Bohemia_Interactive \"Bohemia Interactive\")\n---\nMain franchises |\n\n  * _[ARMA](https://en.wikipedia.org/wiki/ARMA_\\(series\\) \"ARMA \\(series\\)\")_\n  * _**Operation Flashpoint**_\n  * _[Take On](https://en.wikipedia.org/wiki/Take_On \"Take On\")_\n\nOther games |\n\n  * _[Carrier Command: Gaea Mission](https://en.wikipedia.org/wiki/Carrier_Command:_Gaea_Mission \"Carrier Command: Gaea Mission\")_\n  * _[DayZ](https://en.wikipedia.org/wiki/DayZ_\\(video_game\\) \"DayZ \\(video game\\)\")_\n    * [mod](https://en.wikipedia.org/wiki/DayZ_\\(mod\\) \"DayZ \\(mod\\)\")\n\nSubsidiaries |\n\n  * [Altar Games](https://en.wikipedia.org/wiki/Altar_Games \"Altar Games\")\n  * [Black Element Software](https://en.wikipedia.org/wiki/Black_Element_Software \"Black Element Software\")\n  * [Bohemia Interactive Simulations](https://en.wikipedia.org/wiki/Bohemia_Interactive_Simulations \"Bohemia Interactive Simulations\")\n  * [Centauri Production](https://en.wikipedia.org/wiki/Centauri_Production \"Centauri Production\")\n\nTechnology |\n\n  * [Enforce](https://en.wikipedia.org/wiki/Enforce_\\(game_engine\\) \"Enforce \\(game engine\\)\")\n  * [Real Virtuality](https://en.wikipedia.org/wiki/Real_Virtuality_\\(game_engine\\) \"Real Virtuality \\(game engine\\)\")\n  * _[VBS1](https://en.wikipedia.org/wiki/VBS1 \"VBS1\")_\n  * _[VBS2](https://en.wikipedia.org/wiki/VBS2 \"VBS2\")_\n\n  * **Wikipedia book[Book:Bohemia Interactive](https://en.wikipedia.org/wiki/Book:Bohemia_Interactive \"Book:Bohemia Interactive\")**\n  * **Category[Category](https://en.wikipedia.org/wiki/Category:Bohemia_Interactive_games \"Category:Bohemia Interactive games\")**\n\n|\n\n  * [v](https://en.wikipedia.org/wiki/Template:Codemasters \"Template:Codemasters\")\n  * [t](https://en.wikipedia.org/wiki/Template_talk:Codemasters \"Template talk:Codemasters\")\n  * [e](https://en.wikipedia.org/w/index.php?title=Template:Codemasters&action=edit)\n\n[Codemasters](https://en.wikipedia.org/wiki/Codemasters \"Codemasters\")\n---\nFranchises |\n\n  * _[Brian Lara Cricket](https://en.wikipedia.org/wiki/Brian_Lara_Cricket_\\(series\\) \"Brian Lara Cricket \\(series\\)\")_\n  * _[Colin McRae Rally](https://en.wikipedia.org/wiki/Colin_McRae_Rally \"Colin McRae Rally\")_\n  * _[Dirt](https://en.wikipedia.org/wiki/Colin_McRae:_Dirt \"Colin McRae: Dirt\")_\n  * _[Dizzy](https://en.wikipedia.org/wiki/Dizzy_\\(series\\) \"Dizzy \\(series\\)\")_\n  * _[Formula One](https://en.wikipedia.org/wiki/Formula_One \"Formula One\")_\n  * _[Grid](https://en.wikipedia.org/wiki/Race_Driver:_Grid \"Race Driver: Grid\")_\n  * _[LMA Manager](https://en.wikipedia.org/wiki/LMA_Manager_series \"LMA Manager series\")_\n  * _[Micro Machines](https://en.wikipedia.org/wiki/Micro_Machines_\\(video_game_series\\) \"Micro Machines \\(video game series\\)\")_\n  * _[Operation Flashpoint](https://en.wikipedia.org/wiki/Operation_Flashpoint \"Operation Flashpoint\")_\n  * _[Overlord](https://en.wikipedia.org/wiki/Overlord_\\(2007_video_game\\) \"Overlord \\(2007 video game\\)\")_\n  * _[TOCA Touring Car](https://en.wikipedia.org/wiki/TOCA_Touring_Car_series \"TOCA Touring Car series\")_\n\nRelated articles |\n\n  * [Sega Racing Studio](https://en.wikipedia.org/wiki/Sega_Racing_Studio \"Sega Racing Studio\")\n  * [David Darling](https://en.wikipedia.org/wiki/David_Darling_\\(entrepreneur\\) \"David Darling \\(entrepreneur\\)\")\n  * [Anil Ambani](https://en.wikipedia.org/wiki/Anil_Ambani \"Anil Ambani\")\n  * [Reliance Big Entertainment](https://en.wikipedia.org/wiki/Reliance_Big_Entertainment \"Reliance Big Entertainment\")\n  * [List of Codemasters video games](https://en.wikipedia.org/wiki/List_of_Codemasters_video_games \"List of Codemasters video games\")\n\nPortal **[Video games portal](https://en.wikipedia.org/wiki/Portal:Video_games \"Portal:Video games\")**",
+      "uuid": "wikien-n43ipdM570nWsjpdFwaBJw",
+      "super": [
+        "Operation Flashpoint (series)"
+      ],
+      "markdown": "<table>\n<tr>\n<td>\n<table>\n<tr>\n<th colspan=\"2\" scope=\"col\">\n<div>\n<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Template:Operation_Flashpoint\" title=\"Template:Operation Flashpoint\"><span title=\"View this template\">v</span></a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Template_talk:Operation_Flashpoint\" title=\"Template talk:Operation Flashpoint\"><span title=\"Discuss this template\">t</span></a></li>\n<li><a href=\"https://en.wikipedia.org/w/index.php?title=Template:Operation_Flashpoint&amp;action=edit\"><span title=\"Edit this template\">e</span></a></li>\n</ul>\n</div>\n<div><strong><i>Operation Flashpoint</i> series</strong></div>\n</th>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<th scope=\"row\">Video games</th>\n<td>\n<div>\n<ul>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Operation_Flashpoint:_Cold_War_Crisis\" title=\"Operation Flashpoint: Cold War Crisis\">Cold War Crisis</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Operation_Flashpoint:_Resistance\" title=\"Operation Flashpoint: Resistance\">Resistance</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Operation_Flashpoint:_Dragon_Rising\" title=\"Operation Flashpoint: Dragon Rising\">Dragon Rising</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Operation_Flashpoint:_Red_River\" title=\"Operation Flashpoint: Red River\">Red River</a></i></li>\n</ul>\n</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<th scope=\"row\">Related</th>\n<td>\n<div>\n<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Bohemia_Interactive\" title=\"Bohemia Interactive\">Bohemia Interactive</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Codemasters\" title=\"Codemasters\">Codemasters</a></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Gravon:_Real_Virtuality\" title=\"Gravon: Real Virtuality\">Gravon: Real Virtuality</a></i></li>\n</ul>\n</div>\n</td>\n</tr>\n</table>\n</td>\n</tr>\n</table>\n\n<table>\n<tr>\n<td>\n<table>\n<tr>\n<th colspan=\"2\" scope=\"col\">\n<div>\n<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Template:Bohemia_Interactive\" title=\"Template:Bohemia Interactive\"><span title=\"View this template\">v</span></a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Template_talk:Bohemia_Interactive\" title=\"Template talk:Bohemia Interactive\"><span title=\"Discuss this template\">t</span></a></li>\n<li><a href=\"https://en.wikipedia.org/w/index.php?title=Template:Bohemia_Interactive&amp;action=edit\"><span title=\"Edit this template\">e</span></a></li>\n</ul>\n</div>\n<div><a href=\"https://en.wikipedia.org/wiki/Bohemia_Interactive\" title=\"Bohemia Interactive\">Bohemia Interactive</a></div>\n</th>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<th scope=\"row\">Main franchises</th>\n<td>\n<div>\n<ul>\n<li><i><a href=\"https://en.wikipedia.org/wiki/ARMA_(series)\" title=\"ARMA (series)\">ARMA</a></i></li>\n<li><i><strong>Operation Flashpoint</strong></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Take_On\" title=\"Take On\">Take On</a></i></li>\n</ul>\n</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<th scope=\"row\">Other games</th>\n<td>\n<div>\n<ul>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Carrier_Command:_Gaea_Mission\" title=\"Carrier Command: Gaea Mission\">Carrier Command: Gaea Mission</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/DayZ_(video_game)\" title=\"DayZ (video game)\">DayZ</a></i>\n<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/DayZ_(mod)\" title=\"DayZ (mod)\">mod</a></li>\n</ul>\n</li>\n</ul>\n</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<th scope=\"row\">Subsidiaries</th>\n<td>\n<div>\n<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Altar_Games\" title=\"Altar Games\">Altar Games</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Black_Element_Software\" title=\"Black Element Software\">Black Element Software</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Bohemia_Interactive_Simulations\" title=\"Bohemia Interactive Simulations\">Bohemia Interactive Simulations</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Centauri_Production\" title=\"Centauri Production\">Centauri Production</a></li>\n</ul>\n</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<th scope=\"row\">Technology</th>\n<td>\n<div>\n<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Enforce_(game_engine)\" title=\"Enforce (game engine)\">Enforce</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Real_Virtuality_(game_engine)\" title=\"Real Virtuality (game engine)\">Real Virtuality</a></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/VBS1\" title=\"VBS1\">VBS1</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/VBS2\" title=\"VBS2\">VBS2</a></i></li>\n</ul>\n</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<td colspan=\"2\">\n<div>\n<ul>\n<li><b><img alt=\"Wikipedia book\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png\" title=\"Wikipedia book\"/> <a href=\"https://en.wikipedia.org/wiki/Book:Bohemia_Interactive\" title=\"Book:Bohemia Interactive\">Book:Bohemia Interactive</a></b></li>\n<li><b><img alt=\"Category\" src=\"https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png\" title=\"Category\"/> <a href=\"https://en.wikipedia.org/wiki/Category:Bohemia_Interactive_games\" title=\"Category:Bohemia Interactive games\">Category</a></b></li>\n</ul>\n</div>\n</td>\n</tr>\n</table>\n</td>\n</tr>\n</table>\n\n<table>\n<tr>\n<td>\n<table>\n<tr>\n<th colspan=\"2\" scope=\"col\">\n<div>\n<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Template:Codemasters\" title=\"Template:Codemasters\"><span title=\"View this template\">v</span></a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Template_talk:Codemasters\" title=\"Template talk:Codemasters\"><span title=\"Discuss this template\">t</span></a></li>\n<li><a href=\"https://en.wikipedia.org/w/index.php?title=Template:Codemasters&amp;action=edit\"><span title=\"Edit this template\">e</span></a></li>\n</ul>\n</div>\n<div><a href=\"https://en.wikipedia.org/wiki/Codemasters\" title=\"Codemasters\">Codemasters</a></div>\n</th>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<th scope=\"row\">Franchises</th>\n<td>\n<div>\n<ul>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Brian_Lara_Cricket_(series)\" title=\"Brian Lara Cricket (series)\">Brian Lara Cricket</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Colin_McRae_Rally\" title=\"Colin McRae Rally\">Colin McRae Rally</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Colin_McRae:_Dirt\" title=\"Colin McRae: Dirt\">Dirt</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Dizzy_(series)\" title=\"Dizzy (series)\">Dizzy</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Formula_One\" title=\"Formula One\">Formula One</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Race_Driver:_Grid\" title=\"Race Driver: Grid\">Grid</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/LMA_Manager_series\" title=\"LMA Manager series\">LMA Manager</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Micro_Machines_(video_game_series)\" title=\"Micro Machines (video game series)\">Micro Machines</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Operation_Flashpoint\" title=\"Operation Flashpoint\">Operation Flashpoint</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/Overlord_(2007_video_game)\" title=\"Overlord (2007 video game)\">Overlord</a></i></li>\n<li><i><a href=\"https://en.wikipedia.org/wiki/TOCA_Touring_Car_series\" title=\"TOCA Touring Car series\">TOCA Touring Car</a></i></li>\n</ul>\n</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<th scope=\"row\">Related articles</th>\n<td>\n<div>\n<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Sega_Racing_Studio\" title=\"Sega Racing Studio\">Sega Racing Studio</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/David_Darling_(entrepreneur)\" title=\"David Darling (entrepreneur)\">David Darling</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Anil_Ambani\" title=\"Anil Ambani\">Anil Ambani</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/Reliance_Big_Entertainment\" title=\"Reliance Big Entertainment\">Reliance Big Entertainment</a></li>\n<li><a href=\"https://en.wikipedia.org/wiki/List_of_Codemasters_video_games\" title=\"List of Codemasters video games\">List of Codemasters video games</a></li>\n</ul>\n</div>\n</td>\n</tr>\n<tr>\n<td colspan=\"2\"></td>\n</tr>\n<tr>\n<td colspan=\"2\">\n<div><img alt=\"Portal\" src=\"https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png\" title=\"Portal\"/> <b><a href=\"https://en.wikipedia.org/wiki/Portal:Video_games\" title=\"Portal:Video games\">Video games portal</a></b></div>\n</td>\n</tr>\n</table>\n</td>\n</tr>\n</table>",
+      "links": [],
+      "images": [],
       "sections": []
     }
   ],
@@ -55,20 +175,5 @@
     "Video games developed in the Czech Republic",
     "Video games developed in the United Kingdom",
     "Operation Flashpoint (series)"
-  ],
-  "links": [
-    {
-      "anchor": "Military",
-      "url": "https://en.wikipedia.org/wiki/Military"
-    },
-    {
-      "anchor": "Bohemia Interactive Studio",
-      "url": "https://en.wikipedia.org/wiki/Bohemia_Interactive_Studio"
-    },
-    {
-      "anchor": "Codemasters",
-      "url": "https://en.wikipedia.org/wiki/Codemasters"
-    }
-  ],
-  "images": []
+  ]
 }
